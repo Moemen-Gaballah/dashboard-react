@@ -5,6 +5,7 @@ import MainLayout from "./layouts/MainLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/Authentication/LoginPage.jsx";
 import AuthService from "./services/auth.service.js";
+import ListingCarBrands from "./pages/CarBrands/ListingCarBrands.jsx";
 
 
 const App = () => {
@@ -20,7 +21,8 @@ const App = () => {
         < Route>
             (AuthService.isAuth
             ?
-            <Route index element={<MainLayout children={<HomePage/>}/>}/>
+            <Route index element={<MainLayout children={<HomePage />}/>}/>
+            <Route path='car-brands' element={<MainLayout children={<ListingCarBrands />}/>}/>
             :
             <Route path='/login' element={<LoginPage/>}/>
             )

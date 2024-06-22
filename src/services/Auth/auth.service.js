@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import {API_URL} from "../config/config.jsx";
+import {API_URL} from "../../config/config.jsx";
 
 class AuthService {
 

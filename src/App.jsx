@@ -4,7 +4,7 @@ import {
 import MainLayout from "./layouts/MainLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/Authentication/LoginPage.jsx";
-import AuthService from "./services/auth.service.js";
+import AuthService from "./services/Auth/auth.service.js";
 import ListingCarBrands from "./pages/CarBrands/ListingCarBrands.jsx";
 
 
